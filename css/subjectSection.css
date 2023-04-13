@@ -1,0 +1,85 @@
+/* left */
+.container-left {
+  display: grid;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  grid-area: esquerda;
+  margin: 20px;
+}
+
+.login-content {
+  display: grid;
+  gap: 10px;
+  flex-wrap: wrap;
+  grid-template-areas:
+    "title img"
+    "devices img";
+}
+
+.devices {
+  display: grid;
+  gap: 80px;
+  grid-area: devices;
+}
+
+.title-login {
+  font-size: 28px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  grid-area: title;
+  white-space: nowrap;
+}
+
+.title-login h1 {
+  font-weight: 300;
+}
+
+.title-login span {
+  color: var(--headerFoter);
+  font-weight: 800;
+}
+
+.img-student-login {
+  grid-area: img;
+}
+
+.overal_content_subject {
+  display: grid;
+  height: auto;
+  grid-template-areas: "esquerda direita";
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.right_part_subject {
+  width: 40%;
+  height: 100%;
+  grid-area: direita;
+}
+
+.button_div {
+  display: grid;
+  /* padding-left: 200px; */
+  padding: 20px;
+  gap: 40px;
+  font-size: 64px;
+}
+
+.button_subject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: var(--headerFoter);
+  box-shadow: 20px 12px 12px #3348b03f;
+  gap: 20px;
+  font-size: 50px;
+  color: var(--backgorundColor);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
