@@ -39,6 +39,10 @@ option {
   color: var(--backgorundColor);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* menu - YEAR */
 .menu-year {
   display: flex;
@@ -127,6 +131,11 @@ option {
   /* height: 20%;
   width: 100%;
   left: 0; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
 @media (max-width: 640px) {
@@ -171,5 +180,52 @@ option {
     width: auto;
     display: flex;
     justify-content: start;
+  }
+
+  .overal_content_list_student {
+    width: auto;
+    height: fit-content;
+    /* min-height: 78vh; */
+    display: none;
+    justify-content: center;
+
+  }
+  .all_students {
+    margin: 40px;
+    padding: 30px;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    overflow: auto;
+    row-gap: 18px;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr; */
+    justify-content: center;
+    gap: 60px;
+    /* flex-direction: column; */
+  }
+  #student_card_list {
+    display: grid;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--headerFoter);
+    border-style: none;
+    color: var(--popColor);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .student_card_list_name {
+    /* height: 20%;
+    width: 100%;
+    left: 0; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
   }
 }
