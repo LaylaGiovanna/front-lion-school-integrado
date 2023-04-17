@@ -67,9 +67,19 @@ const buttonSubject = async () => {
 
 
 
+    const icon = document.createElement("img");
+    icon.classList.add("image-icon");
+    icon.src = element.icone;
+    icon.alt = "Icon about course";
+
+    buttonsSubject.appendChild(icon);
+
     button_div.appendChild(buttonsSubject);
     button_div.addEventListener("click", remove);
     button_div.addEventListener("click", createScreen);
+
+
+    
   });
 };
 
